@@ -4,6 +4,13 @@
     padding: 0;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
 body {
     align-items: center;
     display: flex;
@@ -12,6 +19,10 @@ body {
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
     padding: 20px 100px;
     text-decoration: none;
     background-color: #1f2937;
@@ -46,6 +57,7 @@ header {
 
 .hero, .placeholder {
     width: 50%;
+    margin: 10px;
 }
 
 .hero-text {
@@ -56,11 +68,33 @@ header {
 
 .block-two {
     display:flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
     gap: 20px;
-    padding: 50px;
+    padding: 40px;
     width: 100%;
     justify-content: center;
+}
+
+.imgs {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.imgs div {
+    flex: 1;
+    max-width: 200px;
+    text-align: center;
+}
+
+.imgs img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 8px;
 }
 
 .block-two div {
@@ -125,13 +159,13 @@ header {
 }
 
 .footer {
-    display: flex;
     background-color: #1f2937;
     color: #f9faf8;
     align-items: center;
     justify-content: center;
     padding: 20px;
     width: 100%;
+    margin-top: auto;
 }
 
 h1 {
@@ -187,9 +221,5 @@ header a {
     padding: 12px;
     padding-inline: 36px;
     border-radius: 8px;
-}
-
-.imgs {
-    flex-wrap: wrap;
 }
 
