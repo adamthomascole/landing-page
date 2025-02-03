@@ -22,8 +22,28 @@ header {
     list-style-type: none;
 }
 
-.hero {
+.block-one {
     display:flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.block-two {
+    display:flex;
+    gap: 20px;
+}
+
+.block-three {
+    text-align: center;
+    background-color: #E5E7EB;
+}
+
+.block-four {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer {
+    text-align: center;
 }
